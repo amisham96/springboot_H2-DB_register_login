@@ -9,8 +9,12 @@
 <title>Create an account</title>
 <link href="/resources/css/bootstrap.min.css" type="text/css"
 	rel="stylesheet">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="/resources/js/bootstrap.min.js"></script>
 </head>
 <body>
+
 	<div class="container">
 		<c:if test="${pageContext.request.userPrincipal.name != null}">
 			<form id="logoutForm" method="POST" action="${contextPath}/logout">
@@ -23,11 +27,10 @@
 					onclick="document.forms['logoutForm'].submit()">Logout</a>
 			</h2>
 		</c:if>
-		
-		
+
+
 	</div>
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script type="text/javascript" src="/resources/js/bootstrap.min.js"></script>
+	<img alt="" src="/resources/gifs/mygif.gif" width="100%" height="100%">
+
 </body>
 </html>
